@@ -4,18 +4,24 @@
 def calculate_powers_of_two_for_loop(minimum: int, maximum: int):
     """Calculate and return the powers of 2 from an inclusive minimum to an exclusive maximum."""
     powers_list = []
-    # TODO: Leveraging your notes, the course slides, and your notes,
+    # Leveraging your notes, the course slides, and your notes,
     # please provide a complete implementation of this function that 
     # produces the correct output as shown in the README.md file.
-    # TODO: Make sure that this function performs the computation with a while loop
+    for c in range(minimum, maximum):
+        ans = 2**c
+        powers_list.append(ans)
+
     return powers_list
 
 
 def calculate_powers_of_two_while_loop(minimum: int, maximum: int):
     """Calculate and return the powers of 2 from an inclusive minimum to an exclusive maximum."""
     powers_list = []
-    # TODO: Leveraging your notes, the course slides, and your notes,
-    # please provide a complete implementation of this function that
-    # produces the correct output as shown in the README.md file.
-    # TODO: Make sure that this function performs the computation with a for loop
+    counter = minimum
+
+    while counter < maximum:
+        ans = 2**minimum
+        counter += 1
+        powers_list.append(ans)
+
     return powers_list
